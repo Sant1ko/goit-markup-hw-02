@@ -126,14 +126,6 @@ body {
 
 }
 
-.button-radio .link:current
-
-.button-radio .link:hover,
-.button-radio{
-    cursor: pointer;
-    color: var(--accent-color);
-    background-color: var(--background-color)
-}
 
 /* Фон футера */
 .footer {
