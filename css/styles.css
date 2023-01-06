@@ -9,7 +9,6 @@
 /* Текст футера rgba(255, 255, 255, 0.6) */
 :root {
   --primary-text-color: #757575;
-  --main-title-text-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #188ce8;
   --primary-white-color: #ffffff;
@@ -32,6 +31,7 @@ body {
 .logo {
   color: #000000;
 
+  font-weight: 700;
   font-family: Raleway;
   letter-spacing: 0.03em;
   font-size: 26px;
@@ -41,11 +41,6 @@ body {
 }
 .logo:hover {
   color: var(--accent-color);
-}
-
-/* Забрать точки перед текстом */
-.list {
-  list-style: none;
 }
 
 /* Забрать линии под ссылкой */
@@ -103,8 +98,11 @@ body {
 }
 
 /* Кнопки */
-.button .link:hover,
-.button .link:focus,
+.button:hover,
+.button:focus {
+  background-color: #147ace;
+}
+
 .button {
   font-family: Roboto, sans-serif;
   color: var(--primary-white-color);
@@ -114,6 +112,24 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button-of-categories:hover,
+.button-of-categories:focus {
+  background-color: #147ace;
+}
+
+.button-of-categories {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 /* Особенности */
@@ -127,7 +143,6 @@ body {
 /* Имена работников */
 .names {
   color: var(--title-text-color);
-  background-color: var(--primary-white-color);
 
   font-weight: 500;
   font-size: 16px;
@@ -137,7 +152,6 @@ body {
 /* Главный текст */
 .text {
   color: var(--primary-text-color);
-  background-color: var(--primary-white-color);
 
   font-weight: 400;
   font-size: 14px;
@@ -146,7 +160,7 @@ body {
 
 /*Описание*/
 .description {
-  color: var(--main-title-text-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 
   font-weight: 400;
@@ -163,7 +177,7 @@ body {
 }
 
 /* То, чем занимаемся */
-.topic {
+.section-tittle {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -188,10 +202,6 @@ body {
 }
 
 /* Взаимодействие с соцсетями */
-.networks .link {
-  background-color: var(--primary-white-color);
-}
-
 .networks .link:hover,
 .networks .link:focus {
   background-color: var(--accent-color);
@@ -205,13 +215,14 @@ body {
 /* Фон футера */
 .footer {
   background-color: var(--footer-background);
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 /* Лого футера */
 .footer-logo {
-  color: #ffffff;
+  color: var(--primary-white-color);
 
+  font-weight: 700;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -221,7 +232,7 @@ body {
 
 /* Работа с футером */
 .footer-networks .link {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: var(--footer-network-backgr);
 }
 
 .footer-networks .link:hover,
@@ -229,6 +240,10 @@ body {
   background-color: var(--accent-color);
 }
 
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
 .address .link {
   color: rgba(255, 255, 255, 0.6);
 
