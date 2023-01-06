@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+    </style>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -19,29 +24,29 @@
       <nav>
         <a href="./index.html" class="logo"><span style="color: #188ce8">Web</span> Studio</a>
 
-        <ul class="site-nav list">
+        <ul class="site-nav">
           <li><a href="./index.html" class="link">Студия</a></li>
           <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="site-contact list">
+      <ul class="site-contact">
         <li><a href="" class="link">info@devstudio.com</a></li>
         <li><a href="" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
       <section>
-        <h1 class="topic">Наши работы</h1>
-        <ul class="list">
-          <li><button type="button" class="button">Все</button></li>
-          <li><button type="button" class="button">Веб-сайты</button></li>
-          <li><button type="button" class="button">Приложения</button></li>
-          <li><button type="button" class="button">Дизайн</button></li>
-          <li><button type="button" class="button">Маркетинг</button></li>
+        <h1 class="section-tittle">Наши работы</h1>
+        <ul>
+          <li><button type="button" class="button-of-categories">Все</button></li>
+          <li><button type="button" class="button-of-categories">Веб-сайты</button></li>
+          <li><button type="button" class="button-of-categories">Приложения</button></li>
+          <li><button type="button" class="button-of-categories">Дизайн</button></li>
+          <li><button type="button" class="button-of-categories">Маркетинг</button></li>
         </ul>
 
-        <ul class="list">
+        <ul>
           <li>
             <a href="" class="link">
               <img src="./images/notebook.jpg" alt="Технокряк" height="294" width="370" />
@@ -184,7 +189,7 @@
 
       <div>
         <b>Присоединяйтесь</b>
-        <ul class="footer-networks list">
+        <ul class="footer-networks">
           <li>
             <a href="" class="link" aria-label="Ссылка на Инстаграм"
               ><img src="./images/Instagram.svg" alt=""
